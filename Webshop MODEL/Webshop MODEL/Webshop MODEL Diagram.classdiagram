@@ -1,43 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="fc4347e9-2fec-4223-a782-424d35de2bb4" name="Webshop MODEL Diagram" linkedPackageId="cd78704a-6e33-48e2-8381-5751ce128895" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="26457692-6e77-44a5-b9bf-fda6a213ad58">
-      <profileInstance Id="e398d448-e835-4b0e-8081-745fb02f8946" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="3399b32c-b34f-4c8b-9c91-e9476669327f">
-      <profileInstance Id="8eaf101a-1b2a-4f6a-b915-04d3daec80c0" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="5d1938e0-cff1-4f8f-bbbc-2709a4fc6147" name="IProduct" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d4ef4c21-b503-467b-8868-be787968b5c5" />
+        <ownedAttributes>
+          <property Id="7cb8e11f-d99c-4f75-845c-4ab7dfe3e669" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="845f453c-89a6-409d-8067-69869e007283" />
+          </property>
+          <property Id="47099b48-d9f7-43a2-8174-a8ef70f2e830" name="Brand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6627dbfb-00b5-48a8-b1e6-70b5f70b28ac" />
+          </property>
+          <property Id="45984a0b-a717-4a22-97d5-c6e6c1c1fbbd" name="Price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e985ada3-8f3e-405a-8d8b-d43a1a27e2e9" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="0287e703-713f-416d-be4b-b0fe252cda4e" name="ICart" isAbstract="false" isLeaf="false">
         <elementDefinition Id="efd22876-e099-44a3-a6cb-0c8033b9ad0f" />
+        <ownedAttributes>
+          <property Id="84fb918f-aa7d-45cd-8d9b-866232abd984" name="list&lt;products&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ded7f462-1976-454b-93c7-99ac03a28844" />
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="d07de23a-5f0d-4f6b-b68d-2b131aa51789" name="AddProduct" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0b6df125-a0db-47b6-8995-201265beaae1" />
+          </operation>
+          <operation Id="a8607405-0ded-4be2-83b2-8a2a5c7a7bdc" name="RemoveProduct" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a9c97234-2dc3-487a-a1fe-eb79d1938eb7" />
+          </operation>
+          <operation Id="96ba5709-573b-417a-88fa-56a05d4b94cb" name="GetProducts" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a789ce3-b326-499c-948e-6f555a29fa35" />
+          </operation>
+          <operation Id="dfaf447b-30ed-494b-8022-26720b309148" name="GetTotalPrice" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2e685c5e-628b-4f20-98cc-b6b634299354" />
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="4fe37949-5045-46e7-8cdb-62ade3955d2e" name="IShoe" isAbstract="false" isLeaf="false">
         <elementDefinition Id="facd8ab1-78ca-4279-9174-38717c33cf26" />
+        <ownedAttributes>
+          <property Id="355636d2-1c8b-4b98-a28d-1d480739cd7c" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b961265-5295-40a8-84e5-28eff5a081de" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="4a161a26-3875-4f05-82ff-d4cbb08faf14" name="IShirt" isAbstract="false" isLeaf="false">
         <elementDefinition Id="77425019-33ef-484f-95e6-6d37c14e8da0" />
+        <ownedAttributes>
+          <property Id="9778bb57-44d6-4bc7-8530-9efac2447de2" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74cdbd2b-0104-44d0-a256-250a593c5439" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="57ad34fd-8797-4ac6-a4a1-52539bcd326f" name="IPants" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8deed098-cf75-42a3-94c3-4e123f57643f" />
+        <ownedAttributes>
+          <property Id="86d7c7d1-bade-4597-bc3a-4db655efb526" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5fb4fec7-7655-4f3e-b771-13f18bf28188" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -58,6 +89,35 @@
     <logicalClassDesignerModelHasTypes>
       <Interface Id="00c0990f-027c-49e1-a940-d0792d850c3f" name="ICustomer" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a04392c6-600b-4225-842e-3ab49c7f6126" />
+        <ownedAttributes>
+          <property Id="e0ffc648-57d0-46a4-8934-88875f47eee1" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6426359d-8bd9-43db-9db5-272280ac79ee" />
+          </property>
+          <property Id="4c3b017f-a037-4ebe-90be-54712bad8cad" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a70ff85-1b1c-4911-b355-1154a0594a80" />
+          </property>
+          <property Id="fbd52a82-8dba-4aca-a646-44d2adc9e722" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc82e799-aac6-42c2-b4d5-a4d050782c50" />
+          </property>
+          <property Id="c0cdd5c1-5e6f-472a-9681-80fa3e02b074" name="ZipCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4878b89f-a23c-470b-8656-4cb35072c96b" />
+          </property>
+          <property Id="afe4de93-c8ba-4349-a312-a6a655befc8b" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1678cf8-24fc-4393-8a45-b5f27ac0f9c2" />
+          </property>
+          <property Id="4c9f8713-9816-49ec-9003-3368f350e4e8" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13f86b8b-9ef2-4d54-a712-4c15fe88dddd" />
+          </property>
+          <property Id="dc391ce6-3d1e-4466-aaa4-ee3167a10ef0" name="SocialSecurityNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a17e87a-8aec-4800-8627-d00f7d820404" />
+          </property>
+          <property Id="0f3fb3cf-f0b0-404a-83bf-5332732ecf24" name="Phone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7de587a1-c352-4af8-b3ac-e713be3c124e" />
+          </property>
+          <property Id="2502cb38-1192-4258-b9d8-0e078d2ccb44" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4c958cc-111e-49ce-b7c5-1b295d3478bb" />
+          </property>
+        </ownedAttributes>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -68,5 +128,19 @@
   </packagedElements>
   <package Id="cd78704a-6e33-48e2-8381-5751ce128895" name="Webshop MODEL">
     <elementDefinition Id="b8ce4d3d-b9ba-4580-8f61-8088afb5379f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="26457692-6e77-44a5-b9bf-fda6a213ad58">
+        <profileInstance Id="e398d448-e835-4b0e-8081-745fb02f8946" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3399b32c-b34f-4c8b-9c91-e9476669327f">
+        <profileInstance Id="8eaf101a-1b2a-4f6a-b915-04d3daec80c0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
