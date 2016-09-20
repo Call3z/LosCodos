@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="fc4347e9-2fec-4223-a782-424d35de2bb4" name="Webshop MODEL Diagram" linkedPackageId="cd78704a-6e33-48e2-8381-5751ce128895" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="26457692-6e77-44a5-b9bf-fda6a213ad58">
+      <profileInstance Id="e398d448-e835-4b0e-8081-745fb02f8946" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3399b32c-b34f-4c8b-9c91-e9476669327f">
+      <profileInstance Id="8eaf101a-1b2a-4f6a-b915-04d3daec80c0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="5d1938e0-cff1-4f8f-bbbc-2709a4fc6147" name="IProduct" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4ef4c21-b503-467b-8868-be787968b5c5" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="0287e703-713f-416d-be4b-b0fe252cda4e" name="ICart" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="efd22876-e099-44a3-a6cb-0c8033b9ad0f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4fe37949-5045-46e7-8cdb-62ade3955d2e" name="IShoe" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="facd8ab1-78ca-4279-9174-38717c33cf26" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4a161a26-3875-4f05-82ff-d4cbb08faf14" name="IShirt" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="77425019-33ef-484f-95e6-6d37c14e8da0" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="57ad34fd-8797-4ac6-a4a1-52539bcd326f" name="IPants" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8deed098-cf75-42a3-94c3-4e123f57643f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d8a4ffff-9553-4928-ae56-63736da72b74" name="ISearchEngine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7ba8e94-15c2-4eb4-9ec6-8e9ca3f98bb2" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="2d17fd03-774f-4e76-be41-01d389195ce5" name="ILogger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d70efbd1-f4a3-47bf-be6e-19522fa711ed" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c93821db-e1f4-4ebf-81c6-05df4e99da39" name="IAdmin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f83f286b-7cf0-48bc-af32-4c9c5c19b86d" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="00c0990f-027c-49e1-a940-d0792d850c3f" name="ICustomer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a04392c6-600b-4225-842e-3ab49c7f6126" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e1f9b384-c57d-419b-99fe-d56b59d2b109" name="ICheckOut" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10f0a5cd-8a81-42ee-ad62-7bb3dcb94162" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="cd78704a-6e33-48e2-8381-5751ce128895" name="Webshop MODEL">
+    <elementDefinition Id="b8ce4d3d-b9ba-4580-8f61-8088afb5379f" />
+  </package>
+</logicalClassDesignerModel>
