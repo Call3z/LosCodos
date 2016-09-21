@@ -51,11 +51,11 @@
         <OperationElementListCompartment Id="f41cb05f-ed7e-4c50-a7ac-d5cb517b7552" absoluteBounds="3.3899999999999997, 2.3511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </interfaceShape>
-    <interfaceShape Id="76e751e8-02c7-4f42-b974-823dbcc146f5" absoluteBounds="1.75, 0.625, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+    <interfaceShape Id="76e751e8-02c7-4f42-b974-823dbcc146f5" absoluteBounds="1.75, 0.625, 1.5, 0.92234373509883882" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
       <interfaceMoniker Id="499ff8bd-ff70-4b10-9cec-873b83fd18a9" LastKnownName="IClothingDatabase" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="de41d4e3-df3d-45ac-a932-04325d9b1d4a" absoluteBounds="1.7649999999999997, 1.0150000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="0293a0da-04c3-4078-9000-cf40acf540d6" absoluteBounds="1.7649999999999997, 1.2261718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="de41d4e3-df3d-45ac-a932-04325d9b1d4a" absoluteBounds="1.765, 1.0150000000000001, 1.4700000000000002, 0.22117186754941942" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0293a0da-04c3-4078-9000-cf40acf540d6" absoluteBounds="1.765, 1.2461718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </interfaceShape>
   </nestedChildShapes>
