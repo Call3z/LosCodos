@@ -142,10 +142,13 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Pages\Master.cshtml" />
     <Content Include="default.cshtml" />
-    <Content Include="Pages\IProduct dummy.cshtml" />
+    <Content Include="Pages\TestICart.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\holder.min.js" />
+    <Content Include="scripts\ie-emulation-modes-warning.js" />
+    <Content Include="scripts\ie10-viewport-bug-workaround.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
