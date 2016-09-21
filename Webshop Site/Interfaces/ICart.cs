@@ -2,7 +2,7 @@
 
 namespace Webshop_Site.Interfaces
 {
-    interface ICart
+    public interface ICart
     {
         List<IProduct> Products { get; set; }
          

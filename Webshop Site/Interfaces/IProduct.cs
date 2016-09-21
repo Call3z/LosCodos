@@ -1,6 +1,6 @@
 ﻿namespace Webshop_Site.Interfaces
 {
-    interface IProduct
+    public interface IProduct
     {
         string Brand { get; set; }
         string Color { get; set; }
