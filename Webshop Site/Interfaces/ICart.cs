@@ -1,8 +1,10 @@
-﻿namespace Webshop_Site.Interfaces
+﻿using System.Collections.Generic;
+
+namespace Webshop_Site.Interfaces
 {
     interface ICart
     {
-         List<IProduct> Products { get; set; }
+        List<IProduct> Products { get; set; }
          
         void AddProduct(IProduct product);
         List<IProduct> GetProducts();
