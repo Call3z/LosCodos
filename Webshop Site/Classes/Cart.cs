@@ -11,22 +11,29 @@ namespace Webshop_Site.Classes
         public List<IProduct> Products { get; set; }
         public void AddProduct(IProduct product)
         {
-            throw new NotImplementedException();
+            Products.Add(product);
         }
 
         public List<IProduct> GetProducts()
         {
-            throw new NotImplementedException();
+            return Products;
         }
 
         public double GetTotalPrice()
         {
-            throw new NotImplementedException();
+            double sum = 0;
+            foreach (var product in Products)
+            {
+                sum += product.Price;
+            }
+            return sum;
+
+
         }
 
         public void RemoveProduct(int index)
         {
-            throw new NotImplementedException();
+            Products.RemoveAt(index);
         }
     }
 }
