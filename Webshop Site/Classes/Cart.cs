@@ -9,6 +9,11 @@ namespace Webshop_Site.Classes
     public class Cart: ICart
     {
         public List<IProduct> Products { get; set; }
+
+        public Cart()
+        {
+            Products = new List<IProduct>();
+        }
         public void AddProduct(IProduct product)
         {
             Products.Add(product);

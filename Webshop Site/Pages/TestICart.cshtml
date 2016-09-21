@@ -1,9 +1,45 @@
 ﻿@using Webshop_Site.Classes
 @using Webshop_Site.Interfaces
 @{
-    Layout = null;
+    Layout = "Master.cshtml";
 
-    IProduct product = new Product();
+    ICart cart = new Cart();
+
+    IProduct product1 = new Product();
+    product1.Brand = "Nike";
+    product1.Price = 130;
+    product1.Color = "Black";
+    product1.Size = "43";
+    product1.Typ = "Shoe";
+
+    IProduct product2 = new Product();
+    product2.Brand = "Addidas";
+    product2.Price = 140;
+    product2.Color = "White";
+    product2.Size = "45";
+    product2.Typ = "Shoe";
+
+    IProduct product3 = new Product();
+    product3.Brand = "Reebok";
+    product3.Price = 150;
+    product3.Color = "Blue";
+    product3.Size = "42";
+    product3.Typ = "Shoe";
+
+    cart.AddProduct(product1);
+    cart.AddProduct(product2);
+    cart.AddProduct(product3);
+
+    double price = 0;
+    bool hasposted = false;
+    if (IsPost)
+    {
+        hasposted = true;
+        price = cart.GetTotalPrice();
+    }
+
+
+
 
 }
 
@@ -16,7 +52,21 @@
 </head>
 <body>
     <div>
-    
+        <form action="" method="POST">
+            <p><input type="submit" value="Total"/>
+            </p>
+        </form>
+        @if (hasposted == true)
+        {   
+            
+
+            foreach (var product in cart.GetProducts())
+            {
+                <p>@product.Brand</p>
+            }
+            <p>Total pris: @price kr</p>
+            <a href="https://www.google.se/search?hl=sv&site=imghp&tbm=isch&source=hp&biw=1706&bih=961&q=latinos&oq=latinos&gs_l=img.3..0l2j0i30k1l8.825.1968.0.2225.7.7.0.0.0.0.149.481.6j1.7.0....0...1ac.1.64.img..0.7.481.rVYArEr3UjY"><img src="https://i.ytimg.com/vi/sb-2_VSsefQ/hqdefault.jpg" /></a>
+        }
     </div>
 </body>
 </html>
