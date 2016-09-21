@@ -6,5 +6,6 @@
         string Color { get; set; }
         double Price { get; set; }
         string Size { get; set; }
+        string Typ { get; set; }
     }
 }
