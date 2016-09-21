@@ -57,8 +57,14 @@
             </p>
         </form>
         @if (hasposted == true)
-        {
-            @price
+        {   
+            
+
+            foreach (var product in cart.GetProducts())
+            {
+                <p>@product.Brand</p>
+            }
+            <p>Total pris: @price kr</p>
         }
     </div>
 </body>
