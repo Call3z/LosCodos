@@ -118,69 +118,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
-        Id="facd8ab1-78ca-4279-9174-38717c33cf26"
-        name="IShoe"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedAttributes>
-          <property
-            Id="9b961265-5295-40a8-84e5-28eff5a081de"
-            name="Size"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributes>
-      </Interface>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
-        Id="77425019-33ef-484f-95e6-6d37c14e8da0"
-        name="IShirt"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedAttributes>
-          <property
-            Id="74cdbd2b-0104-44d0-a256-250a593c5439"
-            name="Size"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributes>
-      </Interface>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
-        Id="8deed098-cf75-42a3-94c3-4e123f57643f"
-        name="IPants"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedAttributes>
-          <property
-            Id="5fb4fec7-7655-4f3e-b771-13f18bf28188"
-            name="Size"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributes>
-      </Interface>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <Interface
         Id="f7ba8e94-15c2-4eb4-9ec6-8e9ca3f98bb2"
         name="ISearchEngine"
         isAbstract="false"
@@ -313,6 +250,13 @@
       <Interface
         Id="10f0a5cd-8a81-42ee-ad62-7bb3dcb94162"
         name="ICheckOut"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1db1b7fc-2ea1-4adb-ae69-b2bd3a0bc00b"
+        name="IClothingDatabase"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

@@ -42,36 +42,6 @@
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="4fe37949-5045-46e7-8cdb-62ade3955d2e" name="IShoe" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="facd8ab1-78ca-4279-9174-38717c33cf26" />
-        <ownedAttributes>
-          <property Id="355636d2-1c8b-4b98-a28d-1d480739cd7c" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9b961265-5295-40a8-84e5-28eff5a081de" />
-          </property>
-        </ownedAttributes>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="4a161a26-3875-4f05-82ff-d4cbb08faf14" name="IShirt" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="77425019-33ef-484f-95e6-6d37c14e8da0" />
-        <ownedAttributes>
-          <property Id="9778bb57-44d6-4bc7-8530-9efac2447de2" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="74cdbd2b-0104-44d0-a256-250a593c5439" />
-          </property>
-        </ownedAttributes>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="57ad34fd-8797-4ac6-a4a1-52539bcd326f" name="IPants" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="8deed098-cf75-42a3-94c3-4e123f57643f" />
-        <ownedAttributes>
-          <property Id="86d7c7d1-bade-4597-bc3a-4db655efb526" name="Size" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5fb4fec7-7655-4f3e-b771-13f18bf28188" />
-          </property>
-        </ownedAttributes>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <Interface Id="d8a4ffff-9553-4928-ae56-63736da72b74" name="ISearchEngine" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f7ba8e94-15c2-4eb4-9ec6-8e9ca3f98bb2" />
       </Interface>
@@ -123,6 +93,11 @@
     <logicalClassDesignerModelHasTypes>
       <Interface Id="e1f9b384-c57d-419b-99fe-d56b59d2b109" name="ICheckOut" isAbstract="false" isLeaf="false">
         <elementDefinition Id="10f0a5cd-8a81-42ee-ad62-7bb3dcb94162" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="499ff8bd-ff70-4b10-9cec-873b83fd18a9" name="IClothingDatabase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1db1b7fc-2ea1-4adb-ae69-b2bd3a0bc00b" />
       </Interface>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
