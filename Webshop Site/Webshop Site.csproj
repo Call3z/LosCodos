@@ -166,7 +166,7 @@
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\Product.cs" />
     <Compile Include="Interfaces\ICart.cs" />
-    <Compile Include="Interfaces\ICheckout.cs" />
+    <Compile Include="Interfaces\ICheckOut.cs" />
     <Compile Include="Interfaces\IClothingDataBase.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
