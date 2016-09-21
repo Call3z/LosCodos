@@ -2,7 +2,6 @@
 {
     interface ICustomer
     {
-        string NAME { get; set; }
         string Address { get; set; }
         string City { get; set; }
         string Email { get; set; }
