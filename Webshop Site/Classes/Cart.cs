@@ -7,5 +7,6 @@ namespace Webshop_Site.Classes
 {
     public class Cart
     {
+
     }
 }
