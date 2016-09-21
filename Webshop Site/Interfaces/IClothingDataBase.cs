@@ -22,5 +22,6 @@ namespace Webshop_Site.Interfaces
         void SetDummyShirts(Product list);
         void SetDummyPants(Product list);
         //todo En funktion som sparar ett objekt av IProduct till databasen? detta blir ju väldigt väsentligt om vi skall använda oss av admingränssnitt.
+        //todo Användaren ska ha en funktion som kan hantera alt. spara användaren.
     }
 }
