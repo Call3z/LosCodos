@@ -111,6 +111,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cart.cs" />
+    <Compile Include="Classes\Checkout.cs" />
+    <Compile Include="Classes\ClothingDateBase.cs" />
+    <Compile Include="Classes\Customer.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICheckout.cs" />
     <Compile Include="Interfaces\IClothingDataBase.cs" />
@@ -118,7 +122,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <PropertyGroup>
