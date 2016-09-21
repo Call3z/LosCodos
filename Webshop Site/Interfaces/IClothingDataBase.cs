@@ -9,7 +9,7 @@ using System.IO;
 
 namespace Webshop_Site.Interfaces
 {
-   public interface IClothingDataBase
+    public interface IClothingDataBase
     {
         
     }
