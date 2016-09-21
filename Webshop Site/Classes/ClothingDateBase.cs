@@ -7,6 +7,6 @@ namespace Webshop_Site.Classes
 {
     public class ClothingDateBase
     {
-        
+
     }
 }
