@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Webshop_Site.Interfaces
+﻿namespace Webshop_Site.Interfaces
 {
-    public class ICustomer
+    interface ICustomer
     {
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string Email { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Password { get; set; }
-        public string Phone { get; set; }
-        public string SocialSecurityNumber { get; set; }
-        public string ZipCode { get; set; }
+        string NAME { get; set; }
+        string Address { get; set; }
+        string City { get; set; }
+        string Email { get; set; }
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        string Password { get; set; }
+        string Phone { get; set; }
+        string SocialSecurityNumber { get; set; }
+        string ZipCode { get; set; }
+
     }
 }
