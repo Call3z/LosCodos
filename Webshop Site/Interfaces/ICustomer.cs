@@ -1,6 +1,6 @@
 ﻿namespace Webshop_Site.Interfaces
 {
-    interface ICustomer
+    public interface ICustomer
     {
         string Address { get; set; }
         string City { get; set; }
