@@ -5,7 +5,8 @@ using System.Web;
 
 namespace Webshop_Site.Classes
 {
-    public class Checkout
+    public class Checkout :
     {
+
     }
 }
