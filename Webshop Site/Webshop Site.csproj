@@ -115,10 +115,12 @@
     <Compile Include="Classes\Checkout.cs" />
     <Compile Include="Classes\ClothingDateBase.cs" />
     <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Product.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICheckout.cs" />
     <Compile Include="Interfaces\IClothingDataBase.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
