@@ -1,6 +1,6 @@
 ﻿namespace Webshop_Site.Interfaces
 {
-    interface IClothingDataBase
+    public interface IClothingDataBase
     {
         
     }
