@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Webshop_Site.Database;
 using Webshop_Site.Interfaces;
 
 namespace Webshop_Site.Classes
@@ -33,5 +34,11 @@ namespace Webshop_Site.Classes
             list.Price = 250;
             list.Size = "30/32";
         }
+
+        Constants boohoo = new Constants();
+        
+
+
+
     }
 }
