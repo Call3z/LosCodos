@@ -149,6 +149,10 @@
     <Content Include="pages\products.cshtml" />
     <Content Include="pages\cart.cshtml" />
     <Content Include="pages\contact.cshtml" />
+    <Content Include="pages\searchresults.cshtml" />
+    <Content Include="pages\shoes.cshtml" />
+    <Content Include="pages\shirts.cshtml" />
+    <Content Include="pages\pants.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
