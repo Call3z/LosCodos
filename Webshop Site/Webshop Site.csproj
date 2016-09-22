@@ -141,10 +141,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Pages\Master.cshtml" />
+    <Content Include="pages\Master.cshtml" />
     <Content Include="default.cshtml" />
-    <Content Include="Pages\TestICart.cshtml" />
-    <Content Include="Pages\IProduct dummy.cshtml" />
+    <Content Include="pages\TestICart.cshtml" />
+    <Content Include="pages\IProduct dummy.cshtml" />
+    <Content Include="pages\products.cshtml" />
+    <Content Include="pages\cart.cshtml" />
+    <Content Include="pages\contact.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
