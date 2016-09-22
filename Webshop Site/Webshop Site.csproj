@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ie10-viewport-bug-workaround.css" />
     <Content Include="Content\stylesheet.css" />
+    <Content Include="Database\Product.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -141,11 +142,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Pages\Master.cshtml" />
+    <Content Include="pages\Master.cshtml" />
     <Content Include="default.cshtml" />
-    <Content Include="Pages\TestICart.cshtml" />
-    <Content Include="Pages\IProduct dummy.cshtml" />
-    <Content Include="Pages\CheckoutPage.cshtml" />
+    <Content Include="pages\TestICart.cshtml" />
+    <Content Include="pages\IProduct dummy.cshtml" />
+    <Content Include="pages\products.cshtml" />
+    <Content Include="pages\cart.cshtml" />
+    <Content Include="pages\contact.cshtml" />
+    <Content Include="pages\searchresults.cshtml" />
+    <Content Include="pages\shoes.cshtml" />
+    <Content Include="pages\shirts.cshtml" />
+    <Content Include="pages\pants.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -173,11 +180,13 @@
     <Compile Include="Classes\ClothingDateBase.cs" />
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="Database\Constants.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICheckOut.cs" />
     <Compile Include="Interfaces\IClothingDataBase.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\IProduct.cs" />
+    <Compile Include="Interfaces\ISearchEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
