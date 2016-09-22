@@ -34,7 +34,5 @@ namespace Webshop_Site.Classes
             list.Size = "30/32";
         }
 
-        public List<IProduct> ShoesList;
-
     }
 }
