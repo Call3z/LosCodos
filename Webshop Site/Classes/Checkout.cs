@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Webshop_Site.Enums;
 using Webshop_Site.Interfaces;
 
 namespace Webshop_Site.Classes
@@ -26,21 +27,21 @@ namespace Webshop_Site.Classes
             product1.Price = 130;
             product1.Color = "Black";
             product1.Size = "43";
-            product1.Typ = "Shoe";
+            product1.Type = ProductType.Pants;
 
             IProduct product2 = new Product();
             product2.Brand = "Addidas";
             product2.Price = 140;
             product2.Color = "White";
             product2.Size = "45";
-            product2.Typ = "Shoe";
+            product2.Type = ProductType.Pants;
 
             IProduct product3 = new Product();
             product3.Brand = "Reebok";
             product3.Price = 150;
             product3.Color = "Blue";
             product3.Size = "42";
-            product3.Typ = "Shoe";
+            product3.Type = ProductType.Pants;
 
             cart.AddProduct(product1);
             cart.AddProduct(product2);
