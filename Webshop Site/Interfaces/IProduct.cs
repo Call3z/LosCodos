@@ -1,4 +1,6 @@
-﻿namespace Webshop_Site.Interfaces
+﻿using Webshop_Site.Enums;
+
+namespace Webshop_Site.Interfaces
 {
     public interface IProduct
     {
@@ -6,6 +8,6 @@
         string Color { get; set; }
         double Price { get; set; }
         string Size { get; set; }
-        string Typ { get; set; }
+        ProductType Type { get; set; }
     }
 }
