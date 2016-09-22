@@ -50,7 +50,7 @@ namespace Webshop_Site.Classes
                 product.Color = node.SelectSingleNode("Color").InnerText;
                 product.Price = int.Parse(node.SelectSingleNode("Price").InnerText);              
                 product.Size = node.SelectSingleNode("Size").InnerText;
-                product.Type = productt
+                product.Type = (ProductType) Enum.Parse(typeof (ProductType), node.SelectSingleNode("Type").InnerText);
 
                 temp.Add(product);
             }
