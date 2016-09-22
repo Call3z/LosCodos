@@ -145,6 +145,7 @@
     <Content Include="default.cshtml" />
     <Content Include="Pages\TestICart.cshtml" />
     <Content Include="Pages\IProduct dummy.cshtml" />
+    <Content Include="Pages\CheckoutPage.cshtml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
