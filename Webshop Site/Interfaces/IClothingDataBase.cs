@@ -13,6 +13,9 @@ namespace Webshop_Site.Interfaces
 {
     public interface IClothingDataBase
     {
+
+        List<IProduct> ProductShoesList();
+
         //todo Path till "clothes.xml" eller vad nu databasen kan komma att heta?
         //todo Lista av IProduct??
         List<IProduct> wareHouse { get; set; }

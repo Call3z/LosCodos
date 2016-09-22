@@ -1,34 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Products>
   <Product>
-    <Shoe>
       <Brand>Nike</Brand>
       <Color>Red</Color>
       <Price>599</Price>
       <Size>44</Size>
-    </Shoe>
-    <Shoe>
-      <Brand>Nike</Brand>
-      <Color>Blue</Color>
-      <Price>599</Price>
-      <Size>44</Size>
-    </Shoe>
   </Product>
   <Product>
-    <Shirt>
+      <Brand>Nike</Brand>
+      <Color>Blue</Color>
+      <Price>499</Price>
+      <Size>44</Size>
+  </Product>
+  <Product>
       <Brand>Nike</Brand>
       <Color>Black</Color>
       <Price>699</Price>
       <Size>M</Size>
-    </Shirt>
   </Product>
   <Product>
-    <Pants>
-      <Brand>Crocker</Brand>
-      <Color>Blue</Color>
-      <Price>799</Price>
-      <Size>30/32</Size>
-    </Pants>
+    <Brand>Crocker</Brand>
+    <Color>Blue</Color>
+    <Price>799</Price>
+    <Size>30/32</Size>
   </Product>
 </Products>
 

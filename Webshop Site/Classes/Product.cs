@@ -12,7 +12,6 @@ namespace Webshop_Site.Classes
         public string Color { get; set; }
         public double Price { get; set; }
         public string Size { get; set; }
-
         public string Typ { get; set; }
     }
 }

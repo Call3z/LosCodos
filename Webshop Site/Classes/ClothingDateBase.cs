@@ -42,7 +42,7 @@ namespace Webshop_Site.Classes
         {
             List<IProduct> temp = new List<IProduct>();         
             reader.Load(Constants.PathToProductDatabaseXml());
-            foreach (XmlNode node in reader.SelectNodes("Products/Product/Shoe"))
+            foreach (XmlNode node in reader.SelectNodes("Products/Product/"))
             {
                 IProduct product = new Product();
                 product.Brand = node.SelectSingleNode("Brand").InnerText;
