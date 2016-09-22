@@ -176,6 +176,7 @@
     <Compile Include="Classes\ClothingDateBase.cs" />
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="Database\Constants.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICheckOut.cs" />
     <Compile Include="Interfaces\IClothingDataBase.cs" />
