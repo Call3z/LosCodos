@@ -1,8 +1,8 @@
 ﻿namespace Webshop_Site.Database
 {
-    public class Constants
+    public static class Constants
     {
-        public string PathToProductDatabaseXml()
+        public static string PathToProductDatabaseXml()
         {
             return @"Database/Product.xml";
         }
