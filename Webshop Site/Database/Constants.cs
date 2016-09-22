@@ -6,7 +6,7 @@ namespace Webshop_Site.Database
     {
         public static string PathToProductDatabaseXml()
         {
-            return @"C:\Users\andre\OneDrive\Dokument\Github\LosCodos\Webshop Site\Database\Product.xml";
+            return @"C:\Projects\LosCodos\Product.xml";
 
         }
     }
