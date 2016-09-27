@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Xml;
 using Webshop_Site.Database;
@@ -33,11 +34,35 @@ namespace Webshop_Site.Classes
             }
 
             return temp;
+        }
+
+        public void AddProduct()
+        {
+            XmlTextWriter writer = new XmlTextWriter(Constants.PathToProductDatabaseXml(), Encoding.UTF8);
+            writer.WriteStartElement("Products");
+            writer.WriteStartElement("Product");//<Product
+            writer.WriteStartElement("Brand");
+            writer.WriteString("Nike");
+            writer.WriteEndElement();
+            writer.WriteStartElement("Color");
+            writer.WriteEndElement();
+            writer.WriteString("Yellow");
+            writer.WriteEndElement();
+            writer.WriteStartElement("Price");
+            writer.WriteEndElement();
+            writer.WriteString("499");
+            writer.WriteStartElement("Size");
+            writer.WriteString("33");
+            writer.WriteEndElement();
+            writer.WriteStartElement("Type");
+            writer.WriteString("1");
+            writer.WriteEndElement();
+            writer.Close();
 
         }
 
-       
-        
+
+
 
 
 

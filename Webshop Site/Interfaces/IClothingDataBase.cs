@@ -24,8 +24,11 @@ namespace Webshop_Site.Interfaces
 
         //todo En funktion som sparar ett objekt av IProduct till databasen? detta blir ju väldigt väsentligt om vi skall använda oss av admingränssnitt.
         //todo Användaren ska ha en funktion som kan hantera alt. spara användaren.
+
+         void AddProduct();
+
     }
-   // public interface I
+   
 
 
 
