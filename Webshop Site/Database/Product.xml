@@ -5,24 +5,28 @@
       <Color>Red</Color>
       <Price>599</Price>
       <Size>44</Size>
+      <Type>1</Type>
   </Product>
   <Product>
       <Brand>Nike</Brand>
       <Color>Blue</Color>
       <Price>499</Price>
       <Size>44</Size>
+      <Type>1</Type>  
   </Product>
   <Product>
       <Brand>Nike</Brand>
       <Color>Black</Color>
       <Price>699</Price>
       <Size>M</Size>
+      <Type>0</Type>
   </Product>
   <Product>
     <Brand>Crocker</Brand>
     <Color>Blue</Color>
     <Price>799</Price>
     <Size>30/32</Size>
+    <Type>2</Type>
   </Product>
 </Products>
 
