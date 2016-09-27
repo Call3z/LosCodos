@@ -28,36 +28,34 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
+<body>
 <div class="site-wrapper">
-    <body>
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
 
-                        <h3 class="masthead-brand">Los Codos</h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="/default.cshtml">Home</a></li>
-                                <li><a href="/pages/products.cshtml">Products</a></li>
-                                <li><a href="/pages/cart.cshtml">Cart</a></li>
-                                <li><a href="/pages/contact.cshtml">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <h3 class="masthead-brand">Los Codos</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="/default.cshtml">Home</a></li>
+                            <li><a href="/pages/products.cshtml">Products</a></li>
+                            <li><a href="/pages/cart.cshtml">Cart</a></li>
+                            <li><a href="/pages/contact.cshtml">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            @RenderBody()
         </div>
+        @RenderBody()
+    </div>
 </div>
 
-@*<form action="searchresults.cshtml">
-    <li>
-    <input type="text" name="fname">
-    <input type="submit" value="Search">
-</form>*@
-
+    @*<form action="searchresults.cshtml">
+            <li>
+            <input type="text" name="fname">
+            <input type="submit" value="Search">
+        </form>*@
 
 </body>
 </html>
