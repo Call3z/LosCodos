@@ -39,6 +39,7 @@ namespace Webshop_Site.Classes
         public void AddProduct()
         {
             XmlTextWriter writer = new XmlTextWriter(Constants.PathToProductDatabaseXml(), Encoding.UTF8);
+            writer.Formatting = Formatting.Indented;
             writer.WriteStartElement("Products");
             writer.WriteStartElement("Product");//<Product
             writer.WriteStartElement("Brand");
