@@ -43,18 +43,19 @@ namespace Webshop_Site.Classes
             writer.WriteStartElement("Product");//<Product
             writer.WriteStartElement("Brand");
             writer.WriteString("Nike");
+            writer.WriteEndElement();
             writer.WriteStartElement("Color");
+            writer.WriteEndElement();
             writer.WriteString("Yellow");
+            writer.WriteEndElement();
             writer.WriteStartElement("Price");
+            writer.WriteEndElement();
             writer.WriteString("499");
             writer.WriteStartElement("Size");
             writer.WriteString("33");
+            writer.WriteEndElement();
             writer.WriteStartElement("Type");
             writer.WriteString("1");
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-            writer.WriteEndElement();
             writer.WriteEndElement();
             writer.Close();
 
