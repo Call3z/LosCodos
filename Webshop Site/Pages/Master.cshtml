@@ -1,5 +1,9 @@
-﻿@{
+﻿@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
     Layout = null;
+
+
 }
 
 <!DOCTYPE html>
@@ -29,27 +33,26 @@
     <![endif]-->
 </head>
 <body>
-<div class="site-wrapper">
-    <div class="site-wrapper-inner">
-        <div class="cover-container">
-            <div class="masthead clearfix">
-                <div class="inner">
-
-                    <h3 class="masthead-brand">Los Codos</h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li class="active"><a href="/default.cshtml">Home</a></li>
-                            <li><a href="/pages/products.cshtml">Products</a></li>
-                            <li><a href="/pages/cart.cshtml">Cart</a></li>
-                            <li><a href="/pages/contact.cshtml">Contact</a></li>
-                        </ul>
-                    </nav>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Los Codos</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="/default.cshtml">Home</a></li>
+                                <li><a href="/pages/products.cshtml">Products</a></li>
+                                <li><a href="/pages/cart.cshtml">Cart</a></li>
+                                <li><a href="/pages/contact.cshtml">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
+            @RenderBody()
         </div>
-        @RenderBody()
     </div>
-</div>
 
     @*<form action="searchresults.cshtml">
             <li>
@@ -57,34 +60,31 @@
             <input type="submit" value="Search">
         </form>*@
 
+
+
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>
+                            by <a href="https://tomdiaz.files.wordpress.com/2009/08/ms1.jpg">Los Codos</a>.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/scripts/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="/scripts/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
+
+
 </body>
 </html>
-
-
-<div>
-    <div>
-        <div>
-            <div class="mastfoot">
-                <div class="inner">
-                    <p>
-                        by <a href="https://tomdiaz.files.wordpress.com/2009/08/ms1.jpg">Los Codos</a>.
-                    </p>
-                </div>
-            </div>
-       </div>
-   </div>
-</div>
-
-
-
-            <!-- Bootstrap core JavaScript
-                ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="/scripts/jquery-1.9.1.min.js"><\/script>')</script>
-            <script src="/scripts/bootstrap.min.js"></script>
-            <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-            <script src="/scripts/holder.min.js"></script>
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
-
