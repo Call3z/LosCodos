@@ -3,7 +3,8 @@
 @{
     Layout = null;
 
-    string test = "hej";
+    //todo hamta varukorg
+    var varukorg = HttpContext.Current.Session["varukorg"];
 }
 
 <!DOCTYPE html>
@@ -86,7 +87,7 @@
     <script src="/scripts/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
-
+    <script src="~/scripts/general.js"></script>
 
 </body>
 </html>
