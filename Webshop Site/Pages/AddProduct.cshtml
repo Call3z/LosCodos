@@ -1,0 +1,97 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using System.Web.WebPages
+@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
+    Layout = "Master.cshtml";
+    IClothingDataBase clothingDataBase = new ClothingDateBase();
+
+    IProduct product = new Product();
+    bool test = false;
+    string mess = "";
+    if (IsPost)
+    {
+        test = true;
+        var brand = Request["Brand"];
+        var color = Request["Color"];
+        var price = Request["Price"];
+        var size = Request["Size"];
+        var type = Request["Type"];
+
+        clothingDataBase.AddProduct();
+        product.Brand = brand;
+        product.Color = color;
+        product.Price = double.Parse(price);
+        product.Size = size;
+       // product.Type = type;
+
+        mess = $"{product.Brand}, {product.Color}, {product.Price}, {product.Size}";
+    }
+
+}
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #4CAF50;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    div {
+        border-radius: 100px;
+        
+        padding: 50px;
+    }
+</style>
+<body>
+
+    <h3>Add product to database</h3>
+
+    <div>
+        <form action="" method="POST">
+            <label for="Brand">Brand</label>
+            <input type="text" id="brand" name="Brand">
+
+            <label for="Color">Color</label>
+            <input type="text" id="color" name="Color">
+
+            <label for="Size">Size</label>
+            <input type="text" id="size" name="size">
+
+            <label for="Price">Price</label>
+            <input type="text" id="price" name="price">
+
+            <label for="Type">Type of product</label>
+            <select id="type" name="Type">
+                <option value="1">Shoes</option>
+                <option value="2">Pants</option>
+                <option value="3">Shirts</option>
+            </select>
+
+            <input type="submit" value="Add">
+        </form>
+    </div>
+
+</body>
+</html>
