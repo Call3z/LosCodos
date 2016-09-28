@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "Master.cshtml";
+
+    //lasa fr[n adressfaltet
+    //request.form["typeId"]
+
+    var product = Request.QueryString["typeId"];
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+<div>
+    <h2>@product</h2>
+</div>
+</body>
+</html>
