@@ -3,7 +3,7 @@
 @{
     Layout = null;
 
-
+    string test = "hej";
 }
 
 <!DOCTYPE html>
@@ -33,26 +33,28 @@
     <![endif]-->
 </head>
 <body>
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <h3 class="masthead-brand">Los Codos</h3>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="/default.cshtml">Home</a></li>
-                                <li><a href="/pages/products.cshtml">Products</a></li>
-                                <li><a href="/pages/cart.cshtml">Cart</a></li>
-                                <li><a href="/pages/contact.cshtml">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Los Codos</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="/default.cshtml">Home</a></li>
+                            <li><a href="/pages/products.cshtml">Products</a></li>
+                            <li><a href="/pages/cart.cshtml">Cart</a></li>
+                            <li><a href="/pages/contact.cshtml">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            @RenderBody()
         </div>
+        @RenderBody()
     </div>
+</div>
+
+
 
     @*<form action="searchresults.cshtml">
             <li>
