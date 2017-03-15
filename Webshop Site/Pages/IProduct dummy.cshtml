@@ -1,0 +1,66 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using System.Web.WebPages
+@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
+    Layout = null;
+
+    IProduct product = new Product();
+    bool test = false;
+    string mess = "";
+    if (IsPost)
+    {
+        test = true;
+        var brand = Request["Brand"];
+        var color = Request["Color"];
+        var price = Request["Price"];
+        var size = Request["Size"];
+
+        product.Brand = brand;
+        product.Color = color;
+        product.Price = double.Parse(price);
+        product.Size = size;
+
+        mess = $"{product.Brand}, {product.Color}, {product.Price}, {product.Size}";
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+<div>
+    <form action="" method="post">
+        <p>
+            <label for="Brand">Brand:</label><br>
+            <input type="text" name="Brand"/>
+        </p>
+        <p>
+            <label for="Color">Color:</label><br>
+            <input type="text" name="Color"/>
+        </p>
+        <p>
+            <label for="Price">Price:</label><br>
+            <input type="text" name="Price"/>
+        </p>
+        <p>
+            <label for="Size">Size:</label><br>
+            <input type="text" name="Size"/>
+        </p>
+        <p><input type="submit" value="Add"/>
+        </p>
+    </form>
+
+    <p>@if (test)
+       {
+        @mess
+       }</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
+    Layout = "Master.cshtml";
+
+    IClothingDataBase clothingDatabase = new ClothingDateBase();
+    var shoes = clothingDatabase.ProductShoesList();
+}
+
+
+@foreach (var shoe in shoes)
+{
+    <p><span>@shoe.Brand</span></p>
+    <p><span>@shoe.Price</span></p>
+    <p><span>@shoe.Color</span></p>
+    <p><span>@shoe.Type.GetType().ToString()</span></p>
+}
+
+
+
+
+
+@*<li><a href="/default.cshtml">Home</a></li>
+<li class="active"><a href="/pages/products.cshtml">Products</a></li>
+<li><a href="/pages/cart.cshtml">Cart</a></li>
+<li><a href="/pages/contact.cshtml">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+</body>
+</html>*@

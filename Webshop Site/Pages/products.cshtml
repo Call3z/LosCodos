@@ -1,0 +1,65 @@
+﻿@using Webshop_Site.Classes
+@using Webshop_Site.Enums
+@using Webshop_Site.Interfaces
+@{
+    Layout = "Master.cshtml";
+
+    //todo hamta alla produkttyper
+    IClothingDataBase products = new ClothingDateBase();
+    var types = products.GetProducts().Distinct().GroupBy(x => x.Type).ToList();
+
+
+
+    //lasa fr[n adressfaltet
+    //request.form["typeId"]
+
+
+}
+
+        <div class="container marketing">
+                <!-- Three columns of text below the carousel -->
+            <div class="row">
+                @foreach(var type in types)
+                {
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>@type.Key</h2>
+                        @if (type.Key == ProductType.Shirt)
+                        {
+                            <p>A shirt is a must have in your wardrobe. And preferably more than one. Shirts are perfect for festive occasions such as when you want to be extra stylish everyday. You certainly do not have a suit and tie to wear the shirt - it is equally suited to a pair of jeans or chinos. It is you who sets the tone for how elegant your outfit depends on what you choose to combine with the shirt.</p>
+                        }
+                        else if (type.Key == ProductType.Shoe)
+                        {
+                            <p>Titta på dina skor, andra gör det! För många hör skorna till de allra viktigaste accessoarerna. Skor påverkar också din outfit beroende på vilken stil du väljer. Dina kläder kan upplevas som en helt annorlunda bara genom att du byter från sneakers till finskor.</p>
+
+                        }
+                        else
+                        {
+                            <p>Byxor är en självklar del av din garderob, men trots att plagget är så viktigt så är det sällan det centrala i en outfit. Vanligare är att man lägger fokus på överdelen. Se till att dina ben blir lika snygga som din överkropp med schyssta byxor.</p>
+                        }
+                        <p>
+                            <a class="btn btn-default" href="showProduct.cshtml?typeId=@type.Key" role="button">View @type.Key »</a>
+                        </p>
+                    </div><!-- /.col-lg-4 -->
+                }
+                
+
+                @*<div class="col-lg-4">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Shirts</h2>
+                        <p>En skjorta är ett måste i din garderob. Och helst fler än en. Skjortor passar lika bra för festligare tillfällen som när du vill vara lite extra snygg i vardagen. Du behöver absolut inte ha kostym och slips för att bära skjorta – den passar lika bra till ett par jeans eller chinos. Det är du själv som sätter tonen för hur elegant din outfit är beroende på vad du väljer att kombinera skjortan med.</p>
+                        <p>
+                            <a class="btn btn-default" href="shirts.cshtml" role="button">View shirts »</a>
+                        </p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Pants</h2>
+                        <p>Byxor är en självklar del av din garderob, men trots att plagget är så viktigt så är det sällan det centrala i en outfit. Vanligare är att man lägger fokus på överdelen. Se till att dina ben blir lika snygga som din överkropp med schyssta byxor.</p>
+                        <p>
+                            <a class="btn btn-default" href="pants.cshtml" role="button">View pants »</a>
+                        </p>
+                    </div><!-- /.col-lg-4 -->
+                    *@
+            </div><!-- /.row -->
+            </div>

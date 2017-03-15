@@ -1,0 +1,44 @@
+﻿@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
+    Layout = "Master.cshtml";
+
+    
+    ICheckOut checkout = new CheckOut();
+    var cart = checkout.GetCart();
+    var products = cart.GetProducts();
+
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form action="" method="POST">
+            <p><input type="submit" value="Total"/>
+            </p>
+        </form>
+
+
+        @foreach (var item in products)
+        {
+            <p><span>@item.Brand</span></p>
+            <p><span>@item.Price</span></p>
+        }
+        <p><span>Total Price @cart.GetTotalPrice()</span></p>
+
+        @*@if (hasposted == true)
+        {   
+            @kvitto
+            <a href="https://www.google.se/search?hl=sv&site=imghp&tbm=isch&source=hp&biw=1706&bih=961&q=latinos&oq=latinos&gs_l=img.3..0l2j0i30k1l8.825.1968.0.2225.7.7.0.0.0.0.149.481.6j1.7.0....0...1ac.1.64.img..0.7.481.rVYArEr3UjY"><img src="https://i.ytimg.com/vi/sb-2_VSsefQ/hqdefault.jpg" /></a>
+        }*@
+    </div>
+</body>
+</html>

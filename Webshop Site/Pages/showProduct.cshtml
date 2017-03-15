@@ -1,0 +1,53 @@
+﻿@using Webshop_Site.Classes
+@using Webshop_Site.Interfaces
+@{
+    Layout = "Master.cshtml";
+
+    //lasa fr[n adressfaltet
+    //request.form["typeId"]
+
+    var typeId = Request.QueryString["typeId"];
+
+    IClothingDataBase db = new ClothingDateBase();
+    var products = db.GetProducts().Where(x => x.Type.ToString() == typeId).ToList();
+
+    if (IsPost)
+    {
+        var submitValue = Request.Form["productId"];
+        var s = submitValue;
+        //if (HttpContext.Current.Session["varukorg"] != null)
+        //{
+        //    //product.add
+        //}
+        //else
+        //{
+        //    HttpContext.Current.Session["varukorg"] = varukorg;
+        //}
+
+    }
+}
+
+
+<div>
+    <h2>@typeId</h2>
+
+    <form method="POST" action="">
+        @foreach (var product in products)
+        {
+            <div>
+                <p>@product.Brand @product.Price <input type="submit" class="inputcss" value="lagg till varukorg" data-product-id="@product.Price">
+                </p>
+            </div>
+        }
+        <input type="hidden" name="productId" value="">
+    </form>
+
+        @*<form method="POST" action="">
+
+                <input type="hidden" value="" name="productId" id="productId">
+
+
+                <input type="submit" value="lagg till varukorg" id="@productId" name="submitValue">
+            </form>*@
+
+</div>
